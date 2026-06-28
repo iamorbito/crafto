@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lugdi - Checkout</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-fixed-variant": "#39485a",
+                      "inverse-primary": "#e3c19f",
+                      "on-primary-container": "#503a21",
+                      "on-secondary-container": "#6a6253",
+                      "on-primary": "#ffffff",
+                      "surface-container-high": "#eae8e4",
+                      "surface-variant": "#e4e2de",
+                      "on-primary-fixed": "#291803",
+                      "on-error": "#ffffff",
+                      "surface-container-lowest": "#ffffff",
+                      "tertiary": "#506072",
+                      "primary-container": "#c4a484",
+                      "on-tertiary-fixed": "#0c1d2d",
+                      "on-tertiary-container": "#304051",
+                      "tertiary-fixed-dim": "#b8c8de",
+                      "primary-fixed": "#ffddbb",
+                      "secondary-fixed": "#ede1cf",
+                      "outline-variant": "#d2c4b9",
+                      "on-error-container": "#93000a",
+                      "charcoal": "#2A2A2A",
+                      "secondary-container": "#eadecc",
+                      "error-container": "#ffdad6",
+                      "on-tertiary": "#ffffff",
+                      "inverse-on-surface": "#f2f0ed",
+                      "surface-container": "#efeeea",
+                      "surface-dim": "#dbdad6",
+                      "on-secondary-fixed-variant": "#4d4639",
+                      "on-secondary": "#ffffff",
+                      "inverse-surface": "#30312e",
+                      "off-white": "#FDFBF7",
+                      "muted-gold": "#D4AF37",
+                      "background": "#fbf9f5",
+                      "secondary": "#665d4f",
+                      "secondary-fixed-dim": "#d0c5b4",
+                      "light-sand": "#E8DCCA",
+                      "tertiary-fixed": "#d4e4fa",
+                      "on-background": "#1b1c1a",
+                      "surface": "#fbf9f5",
+                      "primary": "#735a3e",
+                      "surface-bright": "#fbf9f5",
+                      "primary-fixed-dim": "#e3c19f",
+                      "surface-container-low": "#f5f3ef",
+                      "surface-tint": "#735a3e",
+                      "on-surface": "#1b1c1a",
+                      "on-surface-variant": "#4e453d",
+                      "warm-clay": "#C4A484",
+                      "on-secondary-fixed": "#201b10",
+                      "on-primary-fixed-variant": "#5a4229",
+                      "tertiary-container": "#9babc0",
+                      "surface-container-highest": "#e4e2de",
+                      "outline": "#80756b",
+                      "error": "#ba1a1a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "section-gap": "120px",
+                      "unit": "8px",
+                      "gutter": "24px",
+                      "container-max": "1440px",
+                      "margin-desktop": "64px",
+                      "margin-mobile": "20px"
+              },
+              "fontFamily": {
+                      "headline-lg": [
+                              "Playfair Display"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "label-caps": [
+                              "Inter"
+                      ],
+                      "display-lg": [
+                              "Playfair Display"
+                      ],
+                      "display-lg-mobile": [
+                              "Playfair Display"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Custom input styles for quiet luxury aesthetic */
+        .luxury-input {
+            border: none;
+            border-bottom: 1px solid theme('colors.charcoal');
+            border-radius: 0;
+            background: transparent;
+            padding: 8px 0;
+            transition: border-bottom-width 0.2s ease, border-color 0.2s ease;
+        }
+        
+        .luxury-input:focus {
+            outline: none;
+            box-shadow: none;
+            border-bottom: 2px solid theme('colors.charcoal');
+        }
+        
+        /* Hide scrollbar for clean look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: theme('colors.background');
+        }
+        ::-webkit-scrollbar-thumb {
+            background: theme('colors.warm-clay');
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col antialiased selection:bg-warm-clay/30 selection:text-on-background">
+<!-- TopNavBar (Suppressed due to transactional nature, providing minimal logo header instead) -->
+<header class="w-full px-margin-mobile md:px-margin-desktop py-8 flex justify-center items-center border-b border-warm-clay/10 bg-background sticky top-0 z-50">
+<a class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface tracking-tight" href="#">Lugdi</a>
+<!-- Minimal back link, no full nav -->
+<a class="absolute left-margin-mobile md:left-margin-desktop flex items-center gap-2 text-on-surface-variant hover:text-warm-clay transition-colors duration-300" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="arrow_back">arrow_back</span>
+<span class="font-label-caps text-label-caps hidden md:inline-block">Return to Cart</span>
+</a>
+</header>
+<!-- Main Checkout Canvas -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-24">
+<!-- Asymmetrical Layout: 7 cols form, 4 cols summary (1 col gap) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-y-16 lg:gap-x-gutter">
+<!-- Left Side: Checkout Form (Spans 7 columns on desktop) -->
+<div class="lg:col-span-7 pr-0 lg:pr-12">
+<form class="space-y-16"><section class="space-y-8"><h2 class="font-headline-md text-headline-md text-on-surface mb-6">Stall Checkout</h2><div class="space-y-6"><div class="flex flex-col"><label class="font-label-caps text-label-caps text-on-surface-variant mb-2" for="customerName">Customer Name</label><input class="luxury-input font-body-md text-body-md text-on-surface w-full" id="customerName" placeholder="Enter name" type="text"/></div><div class="flex flex-col"><label class="font-label-caps text-label-caps text-on-surface-variant mb-2" for="whatsapp">Phone Number (WhatsApp)</label><input class="luxury-input font-body-md text-body-md text-on-surface w-full" id="whatsapp" placeholder="+1 ..." type="tel"/></div><div class="flex flex-col"><label class="font-label-caps text-label-caps text-on-surface-variant mb-2" for="notes">Special Notes</label><textarea class="luxury-input font-body-md text-body-md text-on-surface w-full min-h-[100px] resize-none" id="notes" placeholder="Any special requests?"></textarea></div></div></section><section class="space-y-8 pt-8 border-t border-warm-clay/10"><div class="text-center space-y-6"><h3 class="font-label-caps text-label-caps text-on-surface-variant">Scan to Pay</h3><div class="mx-auto w-64 h-64 bg-white p-4 border border-warm-clay/20 flex items-center justify-center">{{DATA:IMAGE:IMAGE_1}}</div><div class="py-4"><p class="font-label-caps text-label-caps text-on-surface-variant mb-1">Amount Due</p><h2 class="font-headline-lg text-headline-lg text-on-surface">Total: $101.00</h2></div></div></section><div class="pt-8 flex flex-col gap-4"><button class="w-full bg-warm-clay text-on-primary font-label-caps text-label-caps py-5 tracking-widest hover:bg-charcoal transition-colors duration-300 flex items-center justify-center gap-3" type="button"><span>PAID</span><span class="material-symbols-outlined text-[18px]">check_circle</span></button><a class="w-full text-center font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors duration-300 py-2 underline" href="#">Back to Standard Checkout</a></div></form>
+</div>
+<!-- Right Side: Order Summary (Spans 4 columns on desktop, offset by 1) -->
+<div class="lg:col-span-4 lg:col-start-9 relative">
+<!-- Sticky Container for Desktop -->
+<div class="sticky top-32 bg-surface-container-low p-8 border border-warm-clay/10 flex flex-col h-[calc(100vh-200px)] max-h-[800px]">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-8 border-b border-warm-clay/10 pb-4">Order Summary</h3>
+<!-- Scrollable Product List -->
+<div class="flex-grow overflow-y-auto pr-2 space-y-6 mb-8 scroll-smooth">
+<!-- Product Item 1 -->
+<div class="flex gap-4 group">
+<div class="w-20 h-24 flex-shrink-0 relative bg-surface-variant">
+<img class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-500" data-alt="A minimalist, high-end flat lay photograph of a handmade paper notebook bound with twine, resting on a clean, light sand colored surface with soft, natural lighting casting gentle shadows, evoking a quiet luxury aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWwsTBrrV3ZLHqs2R_755ko7r01kffc_xKYbcnlWvCwMaQAcNLKl4IENL11LXEtgldGaPxy0S7SsUzZI19iXCubZ3sjbCkq6irwSgK5feRXmB9fjiCS2NtJaeORL9cpRtuSnweUuR0i__vlKkn00EfVusFXahDllWrnpkfHIqVpbkNCZ2lQUxyjIJjmoetYVaJniHhxj9BFOBEU7uGDpF1YgowjU0gxVH8vfY7rQthVJvdbXV8B6hw1fFT6sGDK5mz9hF0IUt-JJY"/>
+<div class="absolute -top-2 -right-2 w-6 h-6 bg-charcoal text-on-primary font-label-caps text-[10px] flex items-center justify-center rounded-full">
+                                    1
+                                </div>
+</div>
+<div class="flex flex-col justify-center flex-grow">
+<h4 class="font-headline-md text-[16px] leading-snug text-on-surface mb-1">Hand-pressed Artisanal Journal</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm mb-2">Raw Cotton Blend</p>
+<p class="font-body-md text-body-md text-on-surface font-medium">$45.00</p>
+</div>
+</div>
+<!-- Product Item 2 -->
+<div class="flex gap-4 group">
+<div class="w-20 h-24 flex-shrink-0 relative bg-surface-variant">
+<img class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-500" data-alt="A macro shot of textured, handmade paper envelopes in muted clay and off-white tones, arranged slightly overlapping on a minimalist bright background. The lighting is editorial and soft, highlighting the deckled edges of the luxury paper craft." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBI9vkcO9QXhlanh5pkcUqunc6Ww8BuyvOyNjUl7nNLVNfL6E2BilyW8k0BMhrVUy-6XHDl-babaRew3g6_u0qbrlpSNzbblkOjEEjruYtyJJ2yJlhmSOWvLiUDNK67ZkKzO3rQTRckflWJ--e01jJKOCBOd9RnOXBKgIUMNmvARVArEZi1XBpG-zHcPdd4d_edGT9qL8SnE7bh4r8eHEwpyC14eewzR48W0HO3xRmOTffA-hAa3Ojh0a2ciU-EgbaxGbSZcnAtM3Q"/>
+<div class="absolute -top-2 -right-2 w-6 h-6 bg-charcoal text-on-primary font-label-caps text-[10px] flex items-center justify-center rounded-full">
+                                    2
+                                </div>
+</div>
+<div class="flex flex-col justify-center flex-grow">
+<h4 class="font-headline-md text-[16px] leading-snug text-on-surface mb-1">Deckled Edge Envelopes</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm mb-2">Set of 10, Warm Clay</p>
+<p class="font-body-md text-body-md text-on-surface font-medium">$28.00</p>
+</div>
+</div>
+</div>
+<!-- Discount Code -->
+<div class="flex gap-4 mb-8">
+<input class="luxury-input font-body-md text-body-md text-on-surface flex-grow" placeholder="Discount code" type="text"/>
+<button class="bg-transparent border border-charcoal text-on-surface font-label-caps text-label-caps px-6 hover:bg-warm-clay hover:border-warm-clay hover:text-on-primary transition-all duration-300" type="button">
+                            Apply
+                        </button>
+</div>
+<!-- Totals -->
+<div class="border-t border-warm-clay/10 pt-6 space-y-4">
+<div class="flex justify-between font-body-md text-body-md text-on-surface-variant">
+<span>Subtotal</span>
+<span class="text-on-surface">$101.00</span>
+</div>
+<div class="flex justify-between font-body-md text-body-md text-on-surface-variant">
+<span>Shipping</span>
+<span class="text-on-surface">Calculated next</span>
+</div>
+<div class="flex justify-between items-end pt-4 border-t border-warm-clay/10 mt-2">
+<span class="font-body-md text-body-lg text-on-surface">Total</span>
+<span class="font-headline-md text-headline-md text-on-surface">
+<span class="font-body-md text-[14px] text-on-surface-variant mr-1">USD</span>
+                                $101.00
+                            </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer (Suppressed active navigation, minimal static footprint for transactional page) -->
+<footer class="w-full bg-surface-container-low dark:bg-surface-container-lowest border-t border-warm-clay/10 mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-mobile md:px-margin-desktop py-12 max-w-container-max mx-auto">
+<div class="md:col-span-12 flex flex-col md:flex-row justify-between items-center gap-6">
+<span class="font-headline-md text-headline-md text-on-surface">Lugdi</span>
+<div class="flex gap-6">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-warm-clay transition-colors duration-300 hover:underline" href="#">Sustainability Commitment</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-warm-clay transition-colors duration-300 hover:underline" href="#">Shipping &amp; Returns</a>
+</div>
+<p class="font-body-md text-[12px] text-on-surface-variant">© 2024 Lugdi Artisanal. Crafted by hand, with intent.</p>
+</div>
+</div>
+</footer>
+<!-- Minimal Script for basic interactions -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Add subtle focus states to inputs to mimic quiet luxury interaction
+            const inputs = document.querySelectorAll('.luxury-input');
+            inputs.forEach(input => {
+                input.addEventListener('focus', (e) => {
+                    e.target.parentElement.classList.add('opacity-100');
+                });
+                input.addEventListener('blur', (e) => {
+                    if(!e.target.value) {
+                        e.target.parentElement.classList.remove('opacity-100');
+                    }
+                });
+            });
+        });
+    </script>
+</body></html>

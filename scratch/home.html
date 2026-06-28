@@ -1,0 +1,364 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Paper Lugdi Craft - Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-fixed-variant": "#39485a",
+                      "inverse-primary": "#e3c19f",
+                      "on-primary-container": "#503a21",
+                      "on-secondary-container": "#6a6253",
+                      "on-primary": "#ffffff",
+                      "surface-container-high": "#eae8e4",
+                      "surface-variant": "#e4e2de",
+                      "on-primary-fixed": "#291803",
+                      "on-error": "#ffffff",
+                      "surface-container-lowest": "#ffffff",
+                      "tertiary": "#506072",
+                      "primary-container": "#c4a484",
+                      "on-tertiary-fixed": "#0c1d2d",
+                      "on-tertiary-container": "#304051",
+                      "tertiary-fixed-dim": "#b8c8de",
+                      "primary-fixed": "#ffddbb",
+                      "secondary-fixed": "#ede1cf",
+                      "outline-variant": "#d2c4b9",
+                      "on-error-container": "#93000a",
+                      "charcoal": "#2A2A2A",
+                      "secondary-container": "#eadecc",
+                      "error-container": "#ffdad6",
+                      "on-tertiary": "#ffffff",
+                      "inverse-on-surface": "#f2f0ed",
+                      "surface-container": "#efeeea",
+                      "surface-dim": "#dbdad6",
+                      "on-secondary-fixed-variant": "#4d4639",
+                      "on-secondary": "#ffffff",
+                      "inverse-surface": "#30312e",
+                      "off-white": "#FDFBF7",
+                      "muted-gold": "#D4AF37",
+                      "background": "#fbf9f5",
+                      "secondary": "#665d4f",
+                      "secondary-fixed-dim": "#d0c5b4",
+                      "light-sand": "#E8DCCA",
+                      "tertiary-fixed": "#d4e4fa",
+                      "on-background": "#1b1c1a",
+                      "surface": "#fbf9f5",
+                      "primary": "#735a3e",
+                      "surface-bright": "#fbf9f5",
+                      "primary-fixed-dim": "#e3c19f",
+                      "surface-container-low": "#f5f3ef",
+                      "surface-tint": "#735a3e",
+                      "on-surface": "#1b1c1a",
+                      "on-surface-variant": "#4e453d",
+                      "warm-clay": "#C4A484",
+                      "on-secondary-fixed": "#201b10",
+                      "on-primary-fixed-variant": "#5a4229",
+                      "tertiary-container": "#9babc0",
+                      "surface-container-highest": "#e4e2de",
+                      "outline": "#80756b",
+                      "error": "#ba1a1a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "section-gap": "120px",
+                      "unit": "8px",
+                      "gutter": "24px",
+                      "container-max": "1440px",
+                      "margin-desktop": "64px",
+                      "margin-mobile": "20px"
+              },
+              "fontFamily": {
+                      "headline-lg": [
+                              "Playfair Display"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "label-caps": [
+                              "Inter"
+                      ],
+                      "display-lg": [
+                              "Playfair Display"
+                      ],
+                      "display-lg-mobile": [
+                              "Playfair Display"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            font-feature-settings: 'liga';
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        body {
+            background-color: #fbf9f5; /* background */
+            color: #1b1c1a; /* on-background */
+        }
+        
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .nav-scrolled {
+            background-color: rgba(253, 251, 247, 0.95); /* off-white with opacity */
+            backdrop-filter: blur(8px);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col font-body-md text-body-md selection:bg-warm-clay selection:text-on-primary">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent" id="main-nav">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="flex-1 md:flex hidden gap-8">
+<a class="font-label-caps text-label-caps text-on-surface hover:text-warm-clay transition-colors duration-300" href="#">Shop</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-warm-clay transition-colors duration-300" href="#">Our Story</a>
+</div>
+<div class="flex-1 text-center">
+<a class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface tracking-tight" href="#">Lugdi</a>
+</div>
+<div class="flex-1 flex justify-end">
+<button aria-label="Shopping Cart" class="text-on-surface hover:text-warm-clay transition-colors duration-300">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="bg-cover bg-center w-full h-full" data-alt="A large, high-quality, high-resolution flat lay photograph of a beautifully crafted artisanal paper lugdi bowl. The bowl sits centrally on a minimalist, textured off-white background. The lighting is soft, natural, and bright, highlighting the natural textures and earthy tones of the bowl. The aesthetic is extremely high-end, editorial, quiet luxury, and minimalist, with generous whitespace." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDtYEGLqYKar1KnDbcngp3yxUOhs05PlVbfhLhlFvbMEjrHDrdsFzkHPmmIbYHWetOen98TF1yFi6jk_zfDodTfShlsw0HILqBYxOhPbfvzfUaYVzF732GNaQBdn8Y1anHo6wJPQ3cYijwZR51ABB7O1yX4TJiMNAxTfpu6-EuWEDc4c1AwH321r741rM6yQKSCuAi6bUshMGGiqE0BuIY8cVI893pCCLCzRKpwqhK6WG20McM_ygxvyCE3LML8Q_fL8CNpY1KF5uk')"></div>
+<div class="absolute inset-0 bg-background/20 backdrop-blur-[2px]"></div> <!-- Subtle overlay for text readability if needed -->
+</div>
+<div class="relative z-10 text-center px-margin-mobile max-w-4xl mx-auto flex flex-col items-center mt-20">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6 fade-in-up">Artisanal Paper Lugdi Decor.</h1>
+<p class="font-headline-md text-headline-md text-on-surface-variant mb-10 max-w-2xl fade-in-up" style="transition-delay: 0.1s;">Handcrafted for the Modern Space.</p>
+<a class="inline-flex items-center justify-center px-8 py-4 bg-charcoal text-off-white font-label-caps text-label-caps hover:bg-warm-clay transition-colors duration-300 fade-in-up" href="#explore" style="transition-delay: 0.2s;">
+                    Explore Collection
+                </a>
+</div>
+</section>
+<!-- Featured Categories (Bento/Asymmetric Grid) -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="explore">
+<div class="text-center mb-20 fade-in-up">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">Curated Forms</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Objects of quiet intention.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Premium Bowls (Spans 7 cols on desktop) -->
+<div class="md:col-span-7 group cursor-pointer fade-in-up">
+<div class="relative w-full aspect-[4/3] overflow-hidden mb-6 bg-surface-container">
+<img class="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="A stunning, close-up editorial photograph of a collection of premium artisanal paper lugdi bowls. The bowls vary slightly in size and earthy color tones. They are arranged asymmetrically on a light sand surface. The lighting creates subtle, soft shadows, emphasizing depth and the organic, hand-crafted texture. The mood is serene, minimalist, and expensive." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXiLJLwzNjW3N28jwfVqt51VZF2EvDidNq31E3TAAqyEQ_4MX0l9e-jEXu5IJ2l0GwienB4fjwGO-5-IlIl5df503O7eMyOJ9ViNeMXr9xrE3TdoshtyekTjWv2Fj5vdomqjh9lro38o6dGoYM_jsFom6LUX03yzsxevTD4AfZ5DHIO-oC-W6GxAfXoE0qs1gh_jybT81Oyqkaxhe_5fj-rhdJw7XUoen880WQBn8EJE0By2K6iH4AJ9hutpYXb630R9wd2PY2ulo">
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 group-hover:text-warm-clay transition-colors">Premium Bowls</h3>
+<a class="font-label-caps text-label-caps text-on-surface-variant group-hover:text-on-surface transition-colors" href="#">Shop Now</a>
+</div>
+</div>
+</div>
+<!-- Spacer/Empty Column for asymmetry on desktop -->
+<div class="hidden md:block md:col-span-1"></div>
+<!-- Artisanal Glasses (Spans 4 cols on desktop) -->
+<div class="md:col-span-4 group cursor-pointer fade-in-up md:mt-32" style="transition-delay: 0.1s;">
+<div class="relative w-full aspect-[3/4] overflow-hidden mb-6 bg-surface-container">
+<img class="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="A minimalist editorial shot of a single artisanal glass paired with a small paper lugdi coaster or decorative element. The composition is clean, with the objects placed slightly off-center against a crisp off-white background. The lighting is high-key, casting a delicate, long shadow. The overall aesthetic speaks of refined taste and quiet luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuATONt5-bAnacB-BjuXgKHnAq11bOpsU2YAQLLFidcZgtv8kyDy1xcPeHtFN0oSnpqHwUPg9kzNFj1VCRHiu-IwUjZMr-jAjeHtpSfLgkE0k36t8AwM0poWqYhu3yYJmZTsCOoKmROZn2Ng4HHqAfeBGy9rDmtRo1JSGQZ_0EFRcSzySXmYz2TYYW4LU2wCHCdAapB25WCRKo31FOYHKdFz7RD8-98aa09GwYDWbZPn9QUwcaCrryWr6gl416LGmqNQYImnCmcpPKE">
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 group-hover:text-warm-clay transition-colors">Artisanal Glasses</h3>
+<a class="font-label-caps text-label-caps text-on-surface-variant group-hover:text-on-surface transition-colors" href="#">Shop Now</a>
+</div>
+</div>
+</div>
+<!-- Piggy Banks (Spans 12 cols, wide aspect) -->
+<div class="md:col-span-12 group cursor-pointer fade-in-up mt-12 md:mt-24" style="transition-delay: 0.2s;">
+<div class="relative w-full aspect-[21/9] overflow-hidden mb-6 bg-surface-container">
+<img class="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="A wide, landscape-oriented editorial photograph showcasing an artisanal paper lugdi piggy bank. The piece sits elegantly on a long, low, minimalist wooden table in a sunlit, contemporary space. The background is slightly out of focus, maintaining emphasis on the textured, earthy surface of the hand-crafted object. The style is modern, quiet luxury, with generous breathing room." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbcyesz6Ekryxm-yn9q4XZrP2aznNUZoFnCZ5U4Gxiuq8lI2CX9AXukI3QUZLwLgS-x4KI7-0AYPq93QYM5VmBVoObwFSf-UMz2zjW0dp_r_IaYpVQ3BKkvr8bQslC8dfRMTWCeo4FiCpc3tN9IuBD3rgk431DoE6rLzfUBRtlCjTQVdjNb5vjEmB1jm7SA_3KVqEGzjdOW5cEh7Ph4UzbcKOcsvHqTqdxfsNPWG6H8hras6XG0NRGLSdhX2XtP7rxwVQg_lYnG0E">
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 group-hover:text-warm-clay transition-colors">Piggy Banks</h3>
+<a class="font-label-caps text-label-caps text-on-surface-variant group-hover:text-on-surface transition-colors" href="#">Shop Now</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Signal / Philosophy Section -->
+<section class="py-section-gap bg-surface-container-low px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto flex flex-col md:flex-row items-center justify-between gap-16">
+<div class="md:w-1/2 fade-in-up">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-8">Crafted by hand, with intent.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+                        We believe in material honesty. Every piece is meticulously shaped from sustainable, upcycled paper lugdi, honoring traditional techniques while embracing a minimalist, modern aesthetic.
+                    </p>
+<div class="flex gap-4 mt-8">
+<div class="flex items-center gap-2 border border-warm-clay/20 px-4 py-2">
+<span class="material-symbols-outlined text-warm-clay text-lg" data-icon="eco">eco</span>
+<span class="font-label-caps text-label-caps text-on-surface">Sustainable</span>
+</div>
+<div class="flex items-center gap-2 border border-warm-clay/20 px-4 py-2">
+<span class="material-symbols-outlined text-warm-clay text-lg" data-icon="handshake">handshake</span>
+<span class="font-label-caps text-label-caps text-on-surface">Hand-Crafted</span>
+</div>
+</div>
+</div>
+<div class="md:w-5/12 w-full fade-in-up" style="transition-delay: 0.1s;">
+<div class="bg-cover bg-center w-full aspect-square rounded-sm" data-alt="An extreme close-up, highly detailed photograph showing the hands of an artisan shaping wet paper lugdi. The focus is sharp on the texture of the material and the hands. The background is dark and moody, creating a strong contrast and a sense of deep focus and heritage. The image conveys authenticity, craftsmanship, and tactile honesty." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBqt-LAciRax00BKdyqlLi5nxQqf7k6hN0dRKycLVbJ6i3WBUqgyguJ6gGmeAmzpF3dzfEXBQtOko32Z4Q_nvAFHkFjd6xgDMdhUyX_sJBcZAn6oixrYyK3ZwKc2UuuiucX363_r8w1zGrdaLlI58TseWldn96Q7xDvX4K-Wir-YZAB7Pq9htA0_pHts17nhUs1QRpSOfZIoE47IJb5wIXE8xKLP7H2uubKVXHciN9eZRL0SGKz7oX_Ef2z1L8eVLp2fRMrmVUScaU')"></div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-surface-container-lowest border-t border-warm-clay/10 w-full">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<div class="md:col-span-4 flex flex-col justify-between h-full">
+<a class="font-headline-md text-headline-md text-on-surface dark:text-inverse-on-surface mb-8 md:mb-0" href="#">Lugdi</a>
+<p class="font-body-md text-body-md text-on-surface-variant mt-auto">© 2024 Lugdi Artisanal. Crafted by hand, with intent.</p>
+</div>
+<div class="md:col-span-8 flex flex-col md:flex-row gap-12 md:gap-24 md:justify-end">
+<div class="flex flex-col gap-4">
+<h4 class="font-label-caps text-label-caps text-on-surface mb-2">Explore</h4>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-warm-clay hover:underline transition-all duration-300" href="#">Sustainability Commitment</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-warm-clay hover:underline transition-all duration-300" href="#">Journal</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-caps text-label-caps text-on-surface mb-2">Support</h4>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-warm-clay hover:underline transition-all duration-300" href="#">Contact</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-warm-clay hover:underline transition-all duration-300" href="#">Shipping &amp; Returns</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Scroll effect for Nav
+        const nav = document.getElementById('main-nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('nav-scrolled');
+                nav.classList.remove('bg-transparent');
+            } else {
+                nav.classList.remove('nav-scrolled');
+                nav.classList.add('bg-transparent');
+            }
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-up').forEach(element => {
+            observer.observe(element);
+        });
+    </script>
+</body></html>

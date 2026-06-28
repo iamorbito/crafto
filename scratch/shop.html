@@ -1,0 +1,327 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Shop | Lugdi Artisanal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-fixed-variant": "#39485a",
+                      "inverse-primary": "#e3c19f",
+                      "on-primary-container": "#503a21",
+                      "on-secondary-container": "#6a6253",
+                      "on-primary": "#ffffff",
+                      "surface-container-high": "#eae8e4",
+                      "surface-variant": "#e4e2de",
+                      "on-primary-fixed": "#291803",
+                      "on-error": "#ffffff",
+                      "surface-container-lowest": "#ffffff",
+                      "tertiary": "#506072",
+                      "primary-container": "#c4a484",
+                      "on-tertiary-fixed": "#0c1d2d",
+                      "on-tertiary-container": "#304051",
+                      "tertiary-fixed-dim": "#b8c8de",
+                      "primary-fixed": "#ffddbb",
+                      "secondary-fixed": "#ede1cf",
+                      "outline-variant": "#d2c4b9",
+                      "on-error-container": "#93000a",
+                      "charcoal": "#2A2A2A",
+                      "secondary-container": "#eadecc",
+                      "error-container": "#ffdad6",
+                      "on-tertiary": "#ffffff",
+                      "inverse-on-surface": "#f2f0ed",
+                      "surface-container": "#efeeea",
+                      "surface-dim": "#dbdad6",
+                      "on-secondary-fixed-variant": "#4d4639",
+                      "on-secondary": "#ffffff",
+                      "inverse-surface": "#30312e",
+                      "off-white": "#FDFBF7",
+                      "muted-gold": "#D4AF37",
+                      "background": "#fbf9f5",
+                      "secondary": "#665d4f",
+                      "secondary-fixed-dim": "#d0c5b4",
+                      "light-sand": "#E8DCCA",
+                      "tertiary-fixed": "#d4e4fa",
+                      "on-background": "#1b1c1a",
+                      "surface": "#fbf9f5",
+                      "primary": "#735a3e",
+                      "surface-bright": "#fbf9f5",
+                      "primary-fixed-dim": "#e3c19f",
+                      "surface-container-low": "#f5f3ef",
+                      "surface-tint": "#735a3e",
+                      "on-surface": "#1b1c1a",
+                      "on-surface-variant": "#4e453d",
+                      "warm-clay": "#C4A484",
+                      "on-secondary-fixed": "#201b10",
+                      "on-primary-fixed-variant": "#5a4229",
+                      "tertiary-container": "#9babc0",
+                      "surface-container-highest": "#e4e2de",
+                      "outline": "#80756b",
+                      "error": "#ba1a1a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "section-gap": "120px",
+                      "unit": "8px",
+                      "gutter": "24px",
+                      "container-max": "1440px",
+                      "margin-desktop": "64px",
+                      "margin-mobile": "20px"
+              },
+              "fontFamily": {
+                      "headline-lg": [
+                              "Playfair Display"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "label-caps": [
+                              "Inter"
+                      ],
+                      "display-lg": [
+                              "Playfair Display"
+                      ],
+                      "display-lg-mobile": [
+                              "Playfair Display"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+            },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 300,
+          'GRAD' 0,
+          'opsz' 24
+        }
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col font-body-md text-body-md">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface dark:bg-inverse-surface border-b border-warm-clay/10 transition-all duration-300 soft fade transition-opacity duration-300">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-label-caps text-label-caps text-primary dark:text-primary-fixed-dim border-b border-primary pb-1 transition-colors duration-300" href="#">Shop</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-surface-variant hover:text-warm-clay transition-colors duration-300" href="#">Our Story</a>
+</nav>
+<a class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface dark:text-inverse-on-surface tracking-tight" href="#">Lugdi</a>
+<div class="flex items-center gap-6">
+<!-- Mobile Menu Toggle (Placeholder) -->
+<button class="md:hidden text-on-surface dark:text-inverse-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<button class="text-on-surface dark:text-inverse-on-surface hover:text-warm-clay transition-colors duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow pt-[100px] md:pt-[120px] pb-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<!-- Header Section -->
+<div class="mb-24 md:mb-32 text-center md:text-left max-w-3xl">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-charcoal mb-6">The Collection</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">Hand-pulled paper artifacts, crafted with intent. Each piece is a study in material honesty, designed to anchor your space in quiet luxury.</p>
+</div>
+<!-- Filter/Sorting Bar (Minimalist) -->
+<div class="flex justify-between items-center mb-16 pb-4 border-b border-warm-clay/20">
+<div class="flex gap-6">
+<button class="font-label-caps text-label-caps text-charcoal flex items-center gap-2 hover:text-warm-clay transition-colors duration-300">
+                    Filter <span class="material-symbols-outlined text-[16px]">tune</span>
+</button>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-on-surface-variant mr-2">Sort by</span>
+<select class="font-label-caps text-label-caps text-charcoal bg-transparent border-none p-0 focus:ring-0 cursor-pointer appearance-none hover:text-warm-clay transition-colors duration-300">
+<option>Featured</option>
+<option>Newest</option>
+<option>Price: Low to High</option>
+</select>
+<span class="material-symbols-outlined text-[16px] align-middle -ml-1 text-charcoal pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Asymmetrical Product Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter md:gap-y-[120px]">
+<!-- Product 1 (Spans 7 cols) -->
+<div class="md:col-span-7 group cursor-pointer">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low mb-6 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]" data-alt="A high-resolution, top-down flat lay photograph of a textured, hand-made artisanal paper journal resting on a clean, light sand colored surface. The journal has subtle, raw edges and is bound with dark linen thread. The lighting is soft and diffused, creating delicate, natural shadows that emphasize the paper's organic texture, reflecting a minimalist, editorial aesthetic typical of high-end lifestyle magazines." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0q5eEBauQlZI3Sl3dmhSUCGDhsZiTrUFiJrwKAGz4HbQHwZCby88Bsy5sBOHZCfKBOfIsWEa-lejgGqd5kRiWTHAppHk-OHpxNdp1fOj5nFgdGVixLbKnls0gcmewUKA9wtdRa_WfSSdYdqgE7ijyeZSQ7HU1q0rKpmw77lLAQCA41HvH7BHsxvibw7CU7WS1D_OtcG-3nBcezgduCMF6H8WgNxe8UyUTKPKrC7DKE1nA5GnuD_4Tq29YwAXz1VCnCh8GAONtTwQ">
+<div class="absolute top-4 left-4 border border-warm-clay/30 px-3 py-1 bg-off-white/80 backdrop-blur-sm">
+<span class="font-label-caps text-label-caps text-charcoal">Limited Edition</span>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-md text-headline-md text-charcoal mb-1 group-hover:text-warm-clay transition-colors duration-300">The Archival Ledger</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Recycled Cotton &amp; Linen</p>
+</div>
+<span class="font-body-md text-body-md text-charcoal">$120</span>
+</div>
+</div>
+<!-- Product 2 (Spans 4 cols, offset) -->
+<div class="md:col-span-4 md:col-start-9 md:mt-[15%] group cursor-pointer">
+<div class="relative w-full aspect-[3/4] bg-surface-container-low mb-6 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]" data-alt="A close-up, high-end editorial shot of a stack of premium, heavyweight artisanal paper cards in an off-white hue. The cards are arranged asymmetrically on a subtle, warm gray background. Gentle, directional lighting highlights the subtle deckle edges and the deep impression of a blind debossed logo in the corner, conveying a sense of quiet luxury and tactile craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3QH6y32NweHzPcD2vIJNPf6UT4_M6rbxjFVd7fKDPzvceZR3rXsBJaS_QyMmpSZfqbW70a-LVHcYG6ow6lTKodjPmnp4mLJrXzo7fRhjzHPGt7ZEuYJ1wSW49ha_OpMnBTMufq2RXY05JrHEmjEYb7m1i8JZBuo-zkQ9iNR10NidJ_splxSWdCbmEbTSqtfL26ik1XO2AGgyoJ7Ei4Ik0cqvfABdNxGxPaTQlOwdEE7_-lRgNHRcLedMrWEChWlgl-djXEGoNVoQ">
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-md text-headline-md text-charcoal mb-1 group-hover:text-warm-clay transition-colors duration-300">Correspondence Set</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Set of 24 Cards</p>
+</div>
+<span class="font-body-md text-body-md text-charcoal">$65</span>
+</div>
+</div>
+<!-- Product 3 (Spans 5 cols) -->
+<div class="md:col-span-5 md:mt-[-5%] group cursor-pointer">
+<div class="relative w-full aspect-square bg-surface-container-low mb-6 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]" data-alt="A minimalist still life photograph featuring a large, textured sheet of handmade charcoal-grey paper draped elegantly over a subtle, off-white pedestal. Beside it rests a sleek, minimalist brass paperweight. The composition is asymmetrical, utilizing generous negative space. Soft, ambient lighting creates a moody, sophisticated atmosphere consistent with an editorial gallery presentation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUagAakAYzraAFykoFe47OaqjnAxHguqgWo0-BYjycRYnqHCFyJ3iKnaXzjuIBnnyx3kIUv0IVptK3Ed6p7btAORpx48CDGqHRnx4c_xbv9ZAI232ee8an82XBeIdlZvUiKEnj5Smcx82w5MxFY2lIb4NViuRqXLvfb0JCmgoN_rsrxwg0n2QtndZRQZKRo3vEMIKeC7o8MKuynTGxoDvFkPM-y0KTovVOyE0HrIJ4MlY5R4jZZgkedPjzo3mDYeXVjYmoeqHDf6E">
+<div class="absolute top-4 left-4 border border-warm-clay/30 px-3 py-1 bg-off-white/80 backdrop-blur-sm">
+<span class="font-label-caps text-label-caps text-charcoal">Sustainable</span>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-md text-headline-md text-charcoal mb-1 group-hover:text-warm-clay transition-colors duration-300">Charcoal Broadside</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Single Sheet, A2</p>
+</div>
+<span class="font-body-md text-body-md text-charcoal">$45</span>
+</div>
+</div>
+<!-- Product 4 (Spans 6 cols, offset) -->
+<div class="md:col-span-6 md:col-start-7 group cursor-pointer">
+<div class="relative w-full aspect-[16/9] bg-surface-container-low mb-6 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]" data-alt="A wide, landscape-oriented flat lay shot showcasing a beautifully bound sketchbook lying open flat on a clean, light sand surface. The pages exhibit a distinct, rough texture typical of handmade paper. Next to the book is a single, beautifully crafted dark wood pencil. The lighting is pristine and bright, evoking a calm, inspiring studio environment in a light-mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWFmxUBoVAjxawiNSvTez9Lz3dQuy7pwxkt8fRXKgdRYJWb5mjUkW-ihkmOYrJqjyfbtQqmdvJovyqBxWbH4WNNx-x7sTnrmrzdJfzzH_bOEYQOlc75x7qrJIbJfrcOFDA_n_4hPPBpNdtinsmaAfw6D3OtyfwfiWtFCzt9tv3q4Gko2_s9B7E1SzRpfToVcKyIwyQ94vJQfHlmON8rljtq_Xvk55xvgIntfQbrq49NvYIm-MGGbPO_b5G009HHcbPhzYyZOvMpnI">
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-md text-headline-md text-charcoal mb-1 group-hover:text-warm-clay transition-colors duration-300">Studio Sketchbook</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Cold-pressed Texture</p>
+</div>
+<span class="font-body-md text-body-md text-charcoal">$85</span>
+</div>
+</div>
+</div>
+<!-- Load More -->
+<div class="mt-32 flex justify-center">
+<button class="font-label-caps text-label-caps bg-transparent border border-charcoal text-charcoal px-8 py-4 hover:bg-warm-clay hover:border-warm-clay hover:text-on-primary transition-all duration-300">
+                Load More
+            </button>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-surface-container-low dark:bg-surface-container-lowest border-t border-warm-clay/10">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<div class="md:col-span-4 flex flex-col gap-6">
+<span class="font-headline-md text-headline-md text-on-surface dark:text-inverse-on-surface">Lugdi</span>
+<p class="font-body-md text-body-md text-on-surface dark:text-inverse-on-surface max-w-xs">
+                    © 2024 Lugdi Artisanal. Crafted by hand, with intent.
+                </p>
+</div>
+<div class="md:col-span-8 flex flex-col md:flex-row gap-12 md:gap-24 md:justify-end mt-12 md:mt-0">
+<div class="flex flex-col gap-4">
+<span class="font-label-caps text-label-caps text-on-surface-variant dark:text-surface-variant mb-2">Explore</span>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-warm-clay hover:underline underline-offset-4 transition-colors duration-300" href="#">Sustainability Commitment</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-warm-clay hover:underline underline-offset-4 transition-colors duration-300" href="#">Journal</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label-caps text-label-caps text-on-surface-variant dark:text-surface-variant mb-2">Support</span>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-warm-clay hover:underline underline-offset-4 transition-colors duration-300" href="#">Contact</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-warm-clay hover:underline underline-offset-4 transition-colors duration-300" href="#">Shipping &amp; Returns</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Simple script to handle header background on scroll for that 'sticky' effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('bg-off-white');
+                header.classList.remove('bg-surface');
+            } else {
+                header.classList.add('bg-surface');
+                header.classList.remove('bg-off-white');
+            }
+        });
+    </script>
+</body></html>

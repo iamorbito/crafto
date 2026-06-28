@@ -1,0 +1,231 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Lugdi - Artisanal Bowl</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#39485a",
+                        "inverse-primary": "#e3c19f",
+                        "on-primary-container": "#503a21",
+                        "on-secondary-container": "#6a6253",
+                        "on-primary": "#ffffff",
+                        "surface-container-high": "#eae8e4",
+                        "surface-variant": "#e4e2de",
+                        "on-primary-fixed": "#291803",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#506072",
+                        "primary-container": "#c4a484",
+                        "on-tertiary-fixed": "#0c1d2d",
+                        "on-tertiary-container": "#304051",
+                        "tertiary-fixed-dim": "#b8c8de",
+                        "primary-fixed": "#ffddbb",
+                        "secondary-fixed": "#ede1cf",
+                        "outline-variant": "#d2c4b9",
+                        "on-error-container": "#93000a",
+                        "charcoal": "#2A2A2A",
+                        "secondary-container": "#eadecc",
+                        "error-container": "#ffdad6",
+                        "on-tertiary": "#ffffff",
+                        "inverse-on-surface": "#f2f0ed",
+                        "surface-container": "#efeeea",
+                        "surface-dim": "#dbdad6",
+                        "on-secondary-fixed-variant": "#4d4639",
+                        "on-secondary": "#ffffff",
+                        "inverse-surface": "#30312e",
+                        "off-white": "#FDFBF7",
+                        "muted-gold": "#D4AF37",
+                        "background": "#fbf9f5",
+                        "secondary": "#665d4f",
+                        "secondary-fixed-dim": "#d0c5b4",
+                        "light-sand": "#E8DCCA",
+                        "tertiary-fixed": "#d4e4fa",
+                        "on-background": "#1b1c1a",
+                        "surface": "#fbf9f5",
+                        "primary": "#735a3e",
+                        "surface-bright": "#fbf9f5",
+                        "primary-fixed-dim": "#e3c19f",
+                        "surface-container-low": "#f5f3ef",
+                        "surface-tint": "#735a3e",
+                        "on-surface": "#1b1c1a",
+                        "on-surface-variant": "#4e453d",
+                        "warm-clay": "#C4A484",
+                        "on-secondary-fixed": "#201b10",
+                        "on-primary-fixed-variant": "#5a4229",
+                        "tertiary-container": "#9babc0",
+                        "surface-container-highest": "#e4e2de",
+                        "outline": "#80756b",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "120px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "container-max": "1440px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Playfair Display"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Playfair Display"],
+                        "body-lg": ["Inter"],
+                        "label-caps": ["Inter"],
+                        "display-lg": ["Playfair Display"],
+                        "display-lg-mobile": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "display-lg-mobile": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-transparent transition-colors duration-300" id="navbar">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto border-b border-transparent transition-border duration-300" id="navbar-inner">
+<div class="flex items-center gap-6">
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-warm-clay transition-colors duration-300" href="#">Shop</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-warm-clay transition-colors duration-300" href="#">Our Story</a>
+</nav>
+</div>
+<a class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface tracking-tight absolute left-1/2 -translate-x-1/2" href="/">Lugdi</a>
+<div class="flex items-center gap-4">
+<button class="text-on-surface hover:text-warm-clay transition-colors duration-300 soft fade transition-opacity duration-300">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow pt-24 md:pt-32 pb-section-gap">
+<article class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row gap-gutter md:gap-16 lg:gap-24">
+<!-- Product Image Area (60% Desktop) -->
+<div class="w-full md:w-3/5 flex flex-col gap-unit">
+<div class="aspect-[4/5] md:aspect-auto md:h-[819px] w-full bg-surface-container-low relative overflow-hidden">
+<img class="w-full h-full object-cover absolute inset-0" data-alt="A high-resolution, top-down flat-lay photograph of a handcrafted, textured paper mache bowl. The bowl is a muted off-white color with subtle natural imperfections, resting on a textured light sand background. The lighting is soft, diffused, and natural, creating deep, elegant shadows that emphasize the tactile, artisanal quality of the piece. The overall mood is quiet luxury, editorial, and minimalist." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNIsSKy7y8Dlrtkb41l30uOVQlwPdlhZK4s6j-bhpMKHx1twzwlOWZ3zUKqK_UyCNmQMFAPSOknmd2Wdv3rn4T3RPQ6zj5aVk69vmDMFVeR-22tDgBYr13b-5idjU42k90MAnZn7NYZdz4bYqDhRm6cuFtVXIkgAWAIfCUC5hXGzBtQmsCYqp4VM8Mn8EsdkjKFyu4vKYd2HK-TCMV_Knfb84lkfcj5VJbEbAaHoaUSBPHe4-n-2V7_FzX-VoDcXnp_NDZSbH3rWE">
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="font-label-caps text-label-caps text-on-surface border border-warm-clay/30 px-3 py-1 rounded-full bg-surface/50 backdrop-blur-sm">Limited Edition</span>
+</div>
+</div>
+</div>
+<!-- Product Details Area (40% Desktop) -->
+<div class="w-full md:w-2/5 flex flex-col justify-center py-8 md:py-0">
+<div class="max-w-md">
+<!-- Breadcrumb/Category -->
+<p class="font-label-caps text-label-caps text-on-surface-variant mb-4">Artisanal Vessels</p>
+<!-- Title & Price -->
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-2">The Raw Earth Bowl</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">$145.00</p>
+<hr class="border-t border-warm-clay/20 w-12 mb-8">
+<!-- Description -->
+<div class="prose prose-sm md:prose-base text-on-surface-variant mb-10 space-y-4">
+<p class="font-body-md text-body-md">
+                            Crafted by hand using heritage paper-making techniques, the Raw Earth Bowl embodies the philosophy of quiet luxury. Each vessel is unique, bearing the subtle marks of its maker and the organic texture of recycled cotton and botanical fibers.
+                        </p>
+<p class="font-body-md text-body-md">
+                            Intended as a sculptural centerpiece or a tactile catchall, its unglazed, porous surface celebrates material honesty over artificial perfection.
+                        </p>
+</div>
+<!-- Details -->
+<div class="space-y-3 mb-10">
+<div class="flex justify-between items-center py-2 border-b border-warm-clay/10">
+<span class="font-label-caps text-label-caps text-on-surface">Dimensions</span>
+<span class="font-body-md text-body-md text-on-surface-variant">12" W x 4.5" H</span>
+</div>
+<div class="flex justify-between items-center py-2 border-b border-warm-clay/10">
+<span class="font-label-caps text-label-caps text-on-surface">Material</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Recycled Botanical Paper</span>
+</div>
+<div class="flex justify-between items-center py-2 border-b border-warm-clay/10">
+<span class="font-label-caps text-label-caps text-on-surface">Origin</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Handmade in Kyoto</span>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-col gap-4">
+<button class="w-full bg-warm-clay text-on-primary py-4 px-6 font-label-caps text-label-caps tracking-widest hover:bg-primary transition-colors duration-300 flex items-center justify-center gap-2">
+<span>Add to Cart</span>
+</button>
+<button class="w-full bg-transparent border border-charcoal/20 text-on-surface py-4 px-6 font-label-caps text-label-caps tracking-widest hover:border-charcoal hover:bg-surface-container-low transition-all duration-300">
+                            Inquire About Custom Sizing
+                        </button>
+</div>
+<div class="mt-8 text-center">
+<p class="font-label-caps text-label-caps text-on-surface-variant opacity-70">Complimentary Global Shipping</p>
+</div>
+</div>
+</div>
+</article>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low border-t border-warm-clay/10 mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<div class="md:col-span-4 flex flex-col gap-6">
+<span class="font-headline-md text-headline-md text-on-surface">Lugdi</span>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Lugdi Artisanal. Crafted by hand, with intent.</p>
+</div>
+<div class="md:col-span-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+<div class="flex flex-col gap-4">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-warm-clay transition-colors duration-300 hover:underline" href="#">Sustainability Commitment</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-warm-clay transition-colors duration-300 hover:underline" href="#">Journal</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-warm-clay transition-colors duration-300 hover:underline" href="#">Contact</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-warm-clay transition-colors duration-300 hover:underline" href="#">Shipping &amp; Returns</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Simple sticky header effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('navbar');
+            const inner = document.getElementById('navbar-inner');
+            if (window.scrollY > 50) {
+                header.classList.replace('bg-transparent', 'bg-surface/90');
+                header.classList.add('backdrop-blur-md');
+                inner.classList.replace('border-transparent', 'border-warm-clay/10');
+            } else {
+                header.classList.replace('bg-surface/90', 'bg-transparent');
+                header.classList.remove('backdrop-blur-md');
+                inner.classList.replace('border-warm-clay/10', 'border-transparent');
+            }
+        });
+    </script>
+</body></html>
